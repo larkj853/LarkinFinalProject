@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UFO Sightings</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.min.js"></script>
+  <style>
+    body {
+      margin: 0;
+      overflow: hidden;
+      background: black; 
+      color: white;
+    }
+    #toggle-container {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 10px;
+        border-radius: 5px;
+        color: white;
+        font-family: Arial, sans-serif;
+    }
+    .toggle-btn {
+        display: inline-block;
+        margin-right: 10px;
+        padding: 5px 15px;
+        background-color: #444;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    .toggle-btn:hover {
+        background-color: #666;
+    }
+  </style>
+</head>
+<body>
+
+<div id="toggle-container">
+    <button class="toggle-btn" onclick="setFilter(0)">Filter by Size</button>
+    <button class="toggle-btn" onclick="setFilter(1)">Filter by Brightness</button>
+    <button class="toggle-btn" onclick="setFilter(2)">Filter by Category</button>
+    <button class="toggle-btn" onclick="setFilter(3)">Randomize Data</button>
+</div>
+
+<script src="FinalProject.js"></script>
+</body>
+</html>
